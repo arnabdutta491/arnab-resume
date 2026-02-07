@@ -172,17 +172,6 @@ const FALLBACK_DATA = {
   ],
   "projects": [
     {
-      "title": "NavAI – AI Driven Analytics Platform",
-      "organization": "Navigators Software Pvt. Ltd.",
-      "description": "AI-powered analytics platform enabling natural language interaction with enterprise data using machine learning, NLP, and large language models.",
-      "key_contributions": [
-        "Designed and optimized prompts for LLMs to improve response accuracy and relevance.",
-        "Developed scalable backend services for data ingestion and analytics.",
-        "Worked in a cross-functional agile team including BA, QA, and project management."
-      ],
-      "tech_stack": ["Python", "Django", "PostgreSQL", "MongoDB", "Angular", "Docker", "Jenkins", "AWS"]
-    },
-    {
       "title": "BPCL Gas Pipeline Operations & Maintenance Platform",
       "organization": "ETIOT | In Work Global",
       "description": "Large-scale industrial web application for monitoring gas pipeline assets for a major Indian Public Sector Undertaking (BPCL).",
@@ -228,6 +217,47 @@ const FALLBACK_DATA = {
         "Designed the system to integrate with ATS platforms."
       ],
       "tech_stack": ["Python", "NLP", "Machine Learning", "FastAPI", "REST APIs"]
+    },
+    {
+      "title": "NavAI – AI Driven Analytics Platform",
+      "organization": "Navigators Software Pvt. Ltd.",
+      "description": "AI-powered analytics platform enabling natural language interaction with enterprise data using machine learning, NLP, and large language models.",
+      "key_contributions": [
+        "Designed and optimized prompts for LLMs to improve response accuracy and relevance.",
+        "Developed scalable backend services for data ingestion and analytics.",
+        "Worked in a cross-functional agile team including BA, QA, and project management."
+      ],
+      "tech_stack": ["Python", "Django", "PostgreSQL", "MongoDB", "Angular", "Docker", "Jenkins", "AWS"]
+    },
+    {
+      "title": "Retail POS (Point of Sale)",
+      "description": "Enterprise POS system supporting frontend and backend operations with advanced search and payment integrations.",
+      "highlights": [
+        "Elasticsearch integration reduced search response time by 30%.",
+        "Optimized PostgreSQL queries improved performance by 20%.",
+        "Integrated credit card payments with Pin Pad functionality."
+      ],
+      "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Angular", "Electron", "Docker", "Jenkins", "AWS"]
+    },
+    {
+      "title": "D&B Supply \u2013 E-commerce Admin Panel",
+      "description": "Admin system for inventory, order processing, analytics, and user management.",
+      "highlights": [
+        "Built secure REST APIs with role-based access.",
+        "Implemented caching strategies to improve system responsiveness."
+      ],
+      "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Docker", "AWS"]
+    },
+    {
+      "company": "RightEpay Corp. Pvt. Ltd.",
+      "role": "Software Intern",
+      "duration": "November 2020 \u2013 May 2022",
+      "description": [
+        "Contributed to the development of a digital payments platform.",
+        "Worked on transaction processing, utility payments, and user management modules.",
+        "Collaborated within an agile team under senior guidance."
+      ],
+      "tech_stack": ["Python", "Django", "Angular", "Ionic", "Java (Spring Boot)"]
     }
   ],
   "education": [
