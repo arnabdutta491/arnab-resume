@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arnab Dutta — Senior Software Developer portfolio. 4+ years building high-performance web apps, enterprise systems, and AI-driven platforms." />
+  <meta name="keywords" content="Arnab Dutta, senior software developer, Python, JavaScript, Django, FastAPI, portfolio" />
+  <meta name="author" content="Arnab Dutta" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Arnab Dutta | Senior Software Developer" />
+  <meta property="og:description" content="4+ years building high-performance web apps, enterprise systems & AI platforms." />
+  <meta property="og:type" content="website" />
+
+  <title>Arnab Dutta | Portfolio</title>
+
+  <!-- Google Fonts — premium weight range -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+
+  <!-- ===== PAGE LOADER ===== -->
+  <div class="loader" id="loader">
+    <div class="loader__spinner"></div>
+  </div>
+
+  <!-- ===== CURSOR GLOW (desktop only) ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="header" class="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo" aria-label="Home">
+        <span class="nav__logo-text">AD</span><span class="nav__logo-dot">.</span>
+      </a>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#hero" class="nav__link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav__link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav__link" data-nav>Skills</a></li>
+        <li><a href="#projects" class="nav__link" data-nav>Projects</a></li>
+        <li><a href="#experience" class="nav__link" data-nav>Experience</a></li>
+        <li><a href="#contact" class="nav__link" data-nav>Contact</a></li>
+      </ul>
+
+      <!-- Resume CTA in navbar -->
+      <a href="Arnab_Dutta_Resume.pdf" download class="btn btn--sm btn--glass nav__resume" id="navResume">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Resume
+      </a>
+
+      <!-- Mobile menu toggle -->
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero">
+      <!-- Ambient background -->
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__grid-lines"></div>
+      </div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <div class="hero__badge anim-hero" id="heroBadge">
+            <span class="hero__badge-dot"></span>
+            <span>Available for opportunities</span>
+          </div>
+          <h1 class="hero__name anim-hero" id="heroName"></h1>
+          <h2 class="hero__role anim-hero" id="heroRole"></h2>
+          <p class="hero__tagline anim-hero" id="heroTagline"></p>
+          <div class="hero__actions anim-hero">
+            <a href="#projects" class="btn btn--primary btn--glow">
+              <span>View My Work</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#contact" class="btn btn--outline">Get In Touch</a>
+            <a href="Arnab_Dutta_Resume.pdf" download class="btn btn--ghost" id="heroResume">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating code card -->
+        <div class="hero__visual anim-hero">
+          <div class="hero__card">
+            <div class="hero__card-header">
+              <div class="hero__card-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="hero__card-title">profile.ts</span>
+            </div>
+            <pre class="hero__code" id="heroCode"></pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll-indicator">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ===== SECTION DIVIDER ===== -->
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">01</span>
+          <h2 class="section__title">About Me</h2>
+          <p class="section__subtitle">A brief introduction</p>
+        </div>
+
+        <div class="about__grid">
+          <!-- Profile Image -->
+          <div class="about__photo reveal">
+            <div class="about__photo-wrapper">
+              <img
+                src="profile.jpeg"
+                alt="Arnab Dutta — Senior Software Developer"
+                class="about__photo-img"
+                loading="lazy"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <!-- Fallback avatar if image not found -->
+              <div class="about__photo-fallback" style="display:none;">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="60" cy="60" r="60" fill="var(--clr-primary-ghost)"/>
+                  <circle cx="60" cy="45" r="20" fill="var(--clr-primary)" opacity="0.3"/>
+                  <ellipse cx="60" cy="90" rx="32" ry="22" fill="var(--clr-primary)" opacity="0.2"/>
+                  <text x="60" y="68" text-anchor="middle" font-size="36" font-weight="700" fill="var(--clr-primary)" font-family="Inter, sans-serif">AD</text>
+                </svg>
+              </div>
+              <!-- Decorative ring -->
+              <div class="about__photo-ring"></div>
+              <div class="about__photo-ring about__photo-ring--2"></div>
+              <!-- Floating dots -->
+              <span class="about__photo-dot about__photo-dot--1"></span>
+              <span class="about__photo-dot about__photo-dot--2"></span>
+              <span class="about__photo-dot about__photo-dot--3"></span>
+            </div>
+          </div>
+
+          <div class="about__content reveal" id="aboutContent">
+            <!-- Rendered by JS -->
+          </div>
+          <div class="about__stats reveal" id="aboutStats">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">02</span>
+          <h2 class="section__title">Skills &amp; Tools</h2>
+          <p class="section__subtitle">Technologies I work with daily</p>
+        </div>
+        <div class="skills__grid" id="skillsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">03</span>
+          <h2 class="section__title">Projects</h2>
+          <p class="section__subtitle">Things I've built</p>
+        </div>
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== EXPERIENCE & EDUCATION ===== -->
+    <section id="experience" class="experience section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">04</span>
+          <h2 class="section__title">Experience &amp; Education</h2>
+          <p class="section__subtitle">My professional journey</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== RESUME CTA ===== -->
+    <section class="resume-cta section">
+      <div class="container">
+        <div class="resume-cta__card reveal" id="resumeCta">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"><div class="section-divider__line"></div></div>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section section--alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-header__tag">05</span>
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__subtitle">Let's build something together</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal" id="contactInfo">
+            <!-- Rendered by JS -->
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo">AD<span>.</span></a>
+        <p class="footer__tagline">Building the web, one commit at a time.</p>
+      </div>
+      <div class="footer__socials" id="footerSocials">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="currentYear"></span> Arnab Dutta. All rights reserved.</p>
+        <p class="footer__credit">Designed &amp; Built with precision.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
