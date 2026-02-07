@@ -171,95 +171,97 @@ const FALLBACK_DATA = {
     }
   ],
   "projects": [
-    {
-      "title": "BPCL Gas Pipeline Operations & Maintenance Platform",
-      "organization": "ETIOT | In Work Global",
-      "description": "Large-scale industrial web application for monitoring gas pipeline assets for a major Indian Public Sector Undertaking (BPCL).",
-      "key_contributions": [
-        "Developed backend services using FastAPI to manage large industrial datasets.",
-        "Integrated ESRI GIS maps with multi-layer architecture for real-time asset tracking.",
-        "Enabled real-time monitoring for patrolmen, contractors, and field engineers across 1,000+ assets.",
-        "Optimized heavy data tables and GIS layers to reduce initial load time by 40%."
-      ],
-      "tech_stack": ["Python", "FastAPI", "PostgreSQL", "ESRI Maps", "Docker"]
-    },
-    {
-      "title": "HRMS Product(SFTEVOLVE)",
-      "organization": "Shyam Steel Manufacture Limited",
-      "description": "End-to-end Human Resource Management System for enterprise HR operations.",
-      "key_contributions": [
-        "Built modules for payroll, attendance, leave management, recruitment, performance evaluation, and training.",
-        "Integrated compliance checks and SAP-based external systems.",
-        "Implemented real-time reports and analytics for management decision-making.",
-        "Set up CI/CD pipelines for seamless backend and frontend deployments."
-      ],
-      "tech_stack": ["Python", "Django", "JavaScript", "Docker", "CI/CD", "SAP Integration"]
-    },
-    {
-      "title": "Document Management System (DMS)",
-      "organization": "Shyam Steel Manufacture Limited",
-      "description": "Centralized document management system to securely store, manage, and retrieve enterprise documents.",
-      "key_contributions": [
-        "Designed secure document upload, versioning, and access control features.",
-        "Implemented role-based access permissions for sensitive documents.",
-        "Improved document retrieval efficiency and reduced manual dependency."
-      ],
-      "tech_stack": ["Python", "Django", "PostgreSQL", "Role-Based Access Control"]
-    },
-    {
-      "title": "E-Recruitment CV Parser & Resume Analysis Model",
-      "organization": "Internal / Product R&D",
-      "description": "Automated resume parsing and analysis system for screening and evaluating candidate CVs.",
-      "key_contributions": [
-        "Developed a CV parsing engine to extract structured data from resumes.",
-        "Implemented scoring logic for skills, experience, and keyword relevance.",
-        "Enabled automated shortlisting to reduce manual recruiter effort.",
-        "Designed the system to integrate with ATS platforms."
-      ],
-      "tech_stack": ["Python", "NLP", "Machine Learning", "FastAPI", "REST APIs"]
-    },
-    {
-      "title": "NavAI – AI Driven Analytics Platform",
-      "organization": "Navigators Software Pvt. Ltd.",
-      "description": "AI-powered analytics platform enabling natural language interaction with enterprise data using machine learning, NLP, and large language models.",
-      "key_contributions": [
-        "Designed and optimized prompts for LLMs to improve response accuracy and relevance.",
-        "Developed scalable backend services for data ingestion and analytics.",
-        "Worked in a cross-functional agile team including BA, QA, and project management."
-      ],
-      "tech_stack": ["Python", "Django", "PostgreSQL", "MongoDB", "Angular", "Docker", "Jenkins", "AWS"]
-    },
-    {
-      "title": "Retail POS (Point of Sale)",
-      "description": "Enterprise POS system supporting frontend and backend operations with advanced search and payment integrations.",
-      "highlights": [
-        "Elasticsearch integration reduced search response time by 30%.",
-        "Optimized PostgreSQL queries improved performance by 20%.",
-        "Integrated credit card payments with Pin Pad functionality."
-      ],
-      "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Angular", "Electron", "Docker", "Jenkins", "AWS"]
-    },
-    {
-      "title": "D&B Supply \u2013 E-commerce Admin Panel",
-      "description": "Admin system for inventory, order processing, analytics, and user management.",
-      "highlights": [
-        "Built secure REST APIs with role-based access.",
-        "Implemented caching strategies to improve system responsiveness."
-      ],
-      "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Docker", "AWS"]
-    },
-    {
-      "company": "RightEpay Corp. Pvt. Ltd.",
-      "role": "Software Intern",
-      "duration": "November 2020 \u2013 May 2022",
-      "description": [
-        "Contributed to the development of a digital payments platform.",
-        "Worked on transaction processing, utility payments, and user management modules.",
-        "Collaborated within an agile team under senior guidance."
-      ],
-      "tech_stack": ["Python", "Django", "Angular", "Ionic", "Java (Spring Boot)"]
-    }
-  ],
+  {
+    "title": "BPCL Gas Pipeline Operations & Maintenance Platform",
+    "organization": "ETIOT | InWork Global",
+    "description": "Large-scale industrial web application for monitoring and maintaining gas pipeline assets for BPCL.",
+    "key_contributions": [
+      "Developed scalable backend services using FastAPI to handle large industrial datasets.",
+      "Integrated ESRI GIS maps with multi-layer architecture for real-time asset tracking.",
+      "Enabled real-time monitoring for patrolmen, contractors, and field engineers across 1,000+ assets.",
+      "Optimized heavy data tables and GIS layers, reducing initial load time by 40%."
+    ],
+    "tech_stack": ["Python", "FastAPI", "PostgreSQL", "ESRI GIS", "Docker"]
+  },
+  {
+    "title": "HRMS Product (SFTEVOLVE)",
+    "organization": "Shyam Steel Manufacturing Limited",
+    "description": "End-to-end enterprise Human Resource Management System supporting core HR operations.",
+    "key_contributions": [
+      "Developed modules for payroll, attendance, leave, recruitment, performance management, and training.",
+      "Integrated compliance checks and SAP-based external systems.",
+      "Implemented real-time reports and analytics for management decision-making.",
+      "Configured CI/CD pipelines for smooth backend and frontend deployments."
+    ],
+    "tech_stack": ["Python", "Django", "JavaScript", "Docker", "CI/CD", "SAP Integration"]
+  },
+  {
+    "title": "Document Management System (DMS)",
+    "organization": "Shyam Steel Manufacturing Limited",
+    "description": "Centralized and secure document management platform for enterprise usage.",
+    "key_contributions": [
+      "Designed secure document upload, version control, and access management.",
+      "Implemented role-based access control (RBAC) for sensitive documents.",
+      "Improved document retrieval efficiency and reduced manual document handling."
+    ],
+    "tech_stack": ["Python", "Django", "PostgreSQL", "RBAC"]
+  },
+  {
+    "title": "E-Recruitment CV Parser & Resume Analysis System",
+    "organization": "Internal Product R&D",
+    "description": "Automated system for parsing and analyzing resumes to support recruitment workflows.",
+    "key_contributions": [
+      "Built a CV parsing engine to extract structured data from resumes.",
+      "Implemented scoring logic for skills, experience, and keyword relevance.",
+      "Enabled automated candidate shortlisting to reduce recruiter effort.",
+      "Designed the system to integrate seamlessly with ATS platforms."
+    ],
+    "tech_stack": ["Python", "NLP", "Machine Learning", "FastAPI", "REST APIs"]
+  },
+  {
+    "title": "NavAI – AI Driven Analytics Platform",
+    "organization": "Navigators Software Pvt. Ltd.",
+    "description": "AI-powered analytics platform enabling natural language interaction with enterprise data.",
+    "key_contributions": [
+      "Designed and optimized LLM prompts to improve accuracy and contextual relevance.",
+      "Developed scalable backend services for data ingestion and analytics.",
+      "Collaborated in an agile, cross-functional team with BA, QA, and project managers."
+    ],
+    "tech_stack": ["Python", "Django", "PostgreSQL", "MongoDB", "Angular", "Docker", "Jenkins", "AWS"]
+  },
+  {
+    "title": "Retail POS (Point of Sale) System",
+    "organization": "Navigators Software Pvt. Ltd.",
+    "description": "Full-scale retail POS system supporting billing, inventory, and payment processing.",
+    "key_contributions": [
+      "Integrated Elasticsearch, reducing product search response time by 30%.",
+      "Optimized PostgreSQL queries to improve system performance by 20%.",
+      "Integrated credit card payments with Pin Pad devices."
+    ],
+    "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Angular", "Electron", "Docker", "Jenkins", "AWS"]
+  },
+  {
+    "title": "D&B Supply – E-commerce Admin Panel",
+    "organization": "Navigators Software Pvt. Ltd.",
+    "description": "Admin panel for managing inventory, orders, analytics, and user roles.",
+    "key_contributions": [
+      "Developed secure REST APIs with role-based access control.",
+      "Implemented caching strategies to improve responsiveness and scalability."
+    ],
+    "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Docker", "AWS"]
+  },
+  {
+    "title": "RightEpay",
+    "organization": "RightEpay Corp. Pvt. Ltd.",
+    "description": "Payment Gateway",
+    "key_contributions": [
+     "Contributed to the development of a digital payments platform.",
+      "Worked on transaction processing, utility payments, and user management modules.",
+      "Collaborated within an agile team under senior guidance."
+    ],
+    "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Docker", "AWS"]
+  }
+],
   "education": [
     {
       "degree": "Bachelor of Computer Application",
