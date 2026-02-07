@@ -117,59 +117,88 @@ const FALLBACK_DATA = {
     "operating_systems": ["Linux", "Windows"]
   },
   "experience": [
-    {
-      "company": "ETIOT | In Work Global",
-      "role": "Senior Software Developer",
-      "duration": "January 2026 \u2013 Present",
-      "description": [
-        "Developed a large-scale Gas Pipeline Operations & Maintenance platform for a major Indian PSU.",
-        "Built backend services using FastAPI and Python to manage industrial datasets covering 1,000+ assets.",
-        "Integrated complex GIS mapping using ESRI Maps with multi-layer architecture for real-time asset tracking.",
-        "Optimized heavy data tables and GIS layers, reducing initial load time by 40%."
-      ],
-      "tech_stack": ["Python", "FastAPI", "ESRI Maps", "PostgreSQL"]
-    },
-    {
-      "company": "Shyam Steel Manufacture Limited",
-      "role": "Software Developer",
-      "duration": "June 2024 \u2013 January 2026",
-      "description": [
-        "Designed and developed a full-scale HRMS covering payroll, attendance, recruitment, performance, training, and document management.",
-        "Implemented real-time reporting and analytics for data-driven HR decisions.",
-        "Integrated SAP-based external tools for seamless enterprise workflows.",
-        "Established CI/CD pipelines for backend and frontend deployments.",
-        "Conducted rigorous code reviews, testing, and performance optimizations."
-      ],
-      "tech_stack": ["Python", "Django", "JavaScript", "SAP", "Docker", "CI/CD"]
-    },
-    {
-      "company": "Navigators Software Private Limited",
-      "role": "System Engineer",
-      "duration": "July 2022 \u2013 June 2024",
-      "projects": [
-        {
-          "name": "NavAI",
-          "description": "AI-driven analytics platform using machine learning, NLP, and LLMs for natural language interaction with data.",
-          "responsibilities": [
-            "Designed prompt strategies for improved LLM accuracy.",
-            "Collaborated with a 10-member cross-functional team."
-          ],
-          "tech_stack": ["Python", "Django", "PostgreSQL", "MongoDB", "Angular", "Docker", "Jenkins", "AWS"]
-        }
-      ]
-    },
-    {
-      "company": "RightEpay Corp. Pvt. Ltd.",
-      "role": "Software Intern",
-      "duration": "November 2020 \u2013 May 2022",
-      "description": [
-        "Contributed to the development of a digital payments platform.",
-        "Worked on transaction processing, utility payments, and user management modules.",
-        "Collaborated within an agile team under senior guidance."
-      ],
-      "tech_stack": ["Python", "Django", "Angular", "Ionic", "Java (Spring Boot)"]
-    }
-  ],
+  {
+    "company": "ETIOT | InWork Global",
+    "role": "Senior Software Developer",
+    "duration": "January 2026 – Present",
+    "description": [
+      "Leading backend development for a large-scale Gas Pipeline Operations & Maintenance platform for a major Indian PSU (BPCL).",
+      "Architected scalable backend services using FastAPI and Python to handle high-volume industrial datasets for 1,000+ pipeline assets.",
+      "Integrated advanced GIS mapping using ESRI Maps with multi-layer architecture for real-time asset tracking and visualization.",
+      "Improved system performance by optimizing PostgreSQL queries, heavy data tables, and GIS layers, reducing initial load time by 40%.",
+      "Collaborated with product, QA, and operations teams to deliver production-grade, high-availability systems."
+    ],
+    "tech_stack": ["Python", "FastAPI", "PostgreSQL", "ESRI GIS", "Docker", "REST APIs"]
+  },
+  {
+    "company": "Shyam Steel Manufacturing Limited",
+    "role": "Software Developer",
+    "duration": "June 2024 – January 2026",
+    "description": [
+      "Led development of an enterprise-grade HRMS product covering payroll, attendance, leave management, recruitment, performance appraisal, training, and document management.",
+      "Built and maintained HRMS, DMS, and internal admin modules using Django with role-based access control and audit logging.",
+      "Developed real-time dashboards and MIS reports to support data-driven HR, compliance, and management decisions.",
+      "Integrated SAP-based systems and third-party services for payroll compliance, attendance synchronization, and enterprise workflows.",
+      "Implemented CI/CD pipelines using Docker and automation tools to enable seamless backend and frontend deployments.",
+      "Optimized complex database queries and background jobs, improving overall system performance and stability.",
+      "Worked closely with HR stakeholders, compliance teams, and management to gather requirements and deliver scalable solutions."
+    ],
+    "tech_stack": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "JavaScript",
+      "SAP Integration",
+      "Docker",
+      "CI/CD",
+      "REST APIs",
+      "RBAC"
+    ]
+  },
+  {
+    "company": "Navigators Software Pvt. Ltd.",
+    "role": "System Engineer",
+    "duration": "July 2022 – June 2024",
+    "description": [
+      "Contributed to multiple enterprise and AI-driven projects as part of a cross-functional product engineering team.",
+      "Developed NavAI, an AI-powered analytics platform enabling natural language queries over structured and unstructured enterprise data.",
+      "Designed and optimized prompt engineering strategies for Large Language Models (LLMs) to improve response accuracy and contextual relevance.",
+      "Built scalable backend APIs for data ingestion, processing, and analytics using Django and Python.",
+      "Worked on Retail POS (Point of Sale) systems involving billing, inventory, and payment processing workflows.",
+      "Integrated Elasticsearch to improve product search performance, reducing query response time by approximately 30%.",
+      "Optimized PostgreSQL queries and indexing strategies, improving API response times and system throughput.",
+      "Developed secure RESTful APIs with authentication, authorization, and role-based access control.",
+      "Collaborated closely with Business Analysts, QA engineers, and Project Managers following agile and sprint-based development practices."
+    ],
+    "tech_stack": [
+      "Python",
+      "Django",
+      "PostgreSQL",
+      "MongoDB",
+      "Elasticsearch",
+      "Angular",
+      "Docker",
+      "Jenkins",
+      "AWS",
+      "Machine Learning",
+      "NLP",
+      "LLMs",
+      "REST APIs"
+    ]
+  },
+  {
+    "company": "RightEpay Corp. Pvt. Ltd.",
+    "role": "Software Intern",
+    "duration": "November 2020 – May 2022",
+    "description": [
+      "Supported development of a digital payments and utility payment platform.",
+      "Worked on backend services for transaction processing, user management, and reporting.",
+      "Assisted in API development and integration using Django and Java Spring Boot.",
+      "Gained hands-on experience with full-stack development and agile delivery practices."
+    ],
+    "tech_stack": ["Python", "Django", "Angular", "Ionic", "Java (Spring Boot)", "REST APIs"]
+  }
+],
   "projects": [
   {
     "title": "BPCL Gas Pipeline Operations & Maintenance Platform",
@@ -259,7 +288,7 @@ const FALLBACK_DATA = {
       "Worked on transaction processing, utility payments, and user management modules.",
       "Collaborated within an agile team under senior guidance."
     ],
-    "tech_stack": ["Python", "Django", "PostgreSQL", "Elasticsearch", "Docker", "AWS"]
+    "tech_stack":  ["Python", "Django",'MySql', "Angular", "Ionic", "Java (Spring Boot)"]
   }
 ],
   "education": [
