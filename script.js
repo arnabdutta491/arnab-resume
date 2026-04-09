@@ -118,7 +118,7 @@ const FALLBACK_DATA = {
   },
   "experience": [
   {
-    "company": "ETIOT | InWork Global",
+    "company": "ETIOT INNOVATIONS Private Limited",
     "role": "Senior Software Developer",
     "duration": "January 2026 – Present",
     "description": [
@@ -202,7 +202,7 @@ const FALLBACK_DATA = {
   "projects": [
   {
     "title": "BPCL Gas Pipeline Operations & Maintenance Platform",
-    "organization": "ETIOT | InWork Global",
+    "organization": "ETIOT INNOVATIONS Private Limited",
     "description": "Large-scale industrial web application for monitoring and maintaining gas pipeline assets for BPCL.",
     "key_contributions": [
       "Developed scalable backend services using FastAPI to handle large industrial datasets.",
